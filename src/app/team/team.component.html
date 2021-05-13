@@ -1,0 +1,81 @@
+<div class="row mt-3"></div>
+<h1 class="text-center"><span class="badge bg-dark">TEAM</span></h1>
+
+<div class="row mt-3">
+<div class="card-group">
+    <div class="card" *ngFor="let cards of card">
+      <img src="{{cards.Img}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 *ngif="cards.Attivo" class="card-title">{{cards.Titolo}}</h5>
+        <p class="card-text">{{cards.Descrizione}}</p>
+        <p class="card-text"><small class="text-muted">{{cards.Footer}}</small></p>
+        <p href="https://www.youtube.com/"><small>{{cards.href}}</small></p>
+      </div>
+    </div>
+  <!-- <div class="card">
+      <img src="assets/mary_jane.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mary JaneCo Founder</h5>
+        <p class="card-text">Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/josh_clark.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Josh Clark Sales Head</h5>
+        <p class="card-text">Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+
+
+ <!-- Footer -->
+ <footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+  
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+
+        </div>
+        <!-- Grid column -->
+
+    
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+        
+         
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright: Data Network Consulting S.r.l.
+    <a class="text-reset fw-bold" href="https://www.dncsrl.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
