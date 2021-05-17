@@ -12,6 +12,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ContataComponent } from './contata/contata.component';
 import { TeamComponent } from './team/team.component';
 import { FristprogetComponent } from './fristproget/fristproget.component';
+import { StagePipe } from './home/pipe/stage.pipe';
+import { UpperCasePipe } from '@angular/common';
+//import { StagePipe } from './home/pipe/stage.pipe';
 
 @NgModule({
   declarations: [
@@ -24,13 +27,14 @@ import { FristprogetComponent } from './fristproget/fristproget.component';
     FooterComponent,
     ContataComponent,
     TeamComponent,
-    FristprogetComponent
+    FristprogetComponent,
+    StagePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UpperCasePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
